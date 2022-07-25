@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
 
@@ -73,8 +73,6 @@
       </div>
     </div>
   </div>
-
-  <hr>
 
 <?php get_template_part ('includes/footer'); ?>
 

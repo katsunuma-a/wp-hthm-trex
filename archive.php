@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
 
@@ -10,7 +10,6 @@
 <body>
   
 <?php get_template_part('includes/header'); ?>
-
 
   <!-- Page Header -->
   <header class="masthead" style="background-image: url('img/home-bg.jpg')">
@@ -51,11 +50,8 @@
               <?php the_excerpt(); ?>
             </h3>
           </a>
-          <p class="post-meta">Posted by
-            <?php the_author(); ?>
-            on <?php the_time(get_option('date_format')); ?></p>
         </div>
-        <hr>
+
         <?php endwhile; ?>
         <!-- Pager -->
         <div class="clearfix">
@@ -81,8 +77,6 @@
       </div>
     </div>
   </div>
-
-  <hr>
 
 <?php get_template_part ('includes/footer'); ?>
 

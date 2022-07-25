@@ -1,5 +1,4 @@
-(<!DOCTYPE html>
-
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
 <head>
@@ -7,7 +6,6 @@
   <?php get_header(); ?>
  
 </head>
-
 <body <?php body_class(); ?>>
 
   <?php wp_body_open(); ?>
@@ -27,11 +25,6 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1><?php the_title(); ?></h1>
-            <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
-            <span class="meta">Posted by
-              <?php the_author(); ?>
-              on <?php the_date(); ?></span>
           </div>
         </div>
       </div>
@@ -43,22 +36,27 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <?php the_post_thumbnail(array(32,32),array('alt'=>'アイキャッチ画像')); ?>
+        <h1><?php the_title(); ?></h1>
           <?php the_content();?>
+          <br/>
+          <span class="meta">
+            <?php the_date(); ?>&emsp;投稿&emsp;<?php the_author(); ?>
+          </span>
         </div>
       </div>
     </div>
   </article>
 
-  <hr>
-
   <?php endwhile; ?>
   <?php endif; ?>
 
-  <?php get_template_part('includes/footer'); ?>
 
-  <?php get_footer(); ?>
 
 </body>
+<footer>
+<?php get_template_part('includes/footer'); ?>
+
+<?php get_footer(); ?>
+</footer>
 
 </html>
