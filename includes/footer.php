@@ -43,7 +43,7 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="/contact/">
+            <a href="<?php echo get_page_link(64);?>">
               お問い合わせ
               </a>
             </li>

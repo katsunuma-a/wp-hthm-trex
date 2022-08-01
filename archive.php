@@ -30,7 +30,7 @@
   <!-- Main Content -->
   <div class="blog-btn">
         <a href="/column">記事一覧</a>
-        <a href="#">画像一覧</a>
+        <a href="<?php echo get_page_link(114);?>">画像一覧</a>
         <a href="<?php echo get_author_posts_url( 3 ); ?>">MIAO記事一覧</a>
         <a href="<?php echo get_author_posts_url( 2 ); ?>">TAKAO記事一覧</a>
       </div>

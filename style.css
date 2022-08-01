@@ -1640,3 +1640,34 @@ header.masthead-rct-post .post-heading .meta a {
     max-width: 1800px;
   }
 }
+
+
+/**/
+.cont{
+  height: auto;
+}
+/**/
+
+/*404page*/
+
+.not-found{
+  height: 400px;
+  line-height: 500%;
+}
+
+.not-found h1{
+  font-size: 50px;
+  text-align: center;
+}
+
+.not-found p {
+   font-size: 30px;
+   text-align: center;
+}
+
+.not-btn h5{
+  text-align: center;
+  font-size: 20px;
+}
+
+/**/
