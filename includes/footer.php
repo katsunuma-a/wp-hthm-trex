@@ -1,11 +1,10 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="row-">
           <ul class="list-inline text-center">
           <li class="list-inline-item">
-          <img class="site-logo" src="<?php echo esc_url(get_theme_file_uri('img/logo.png')); ?>" alt="<?php bloginfo('name'); ?>">
+          <img class="site-logo-foot" src="<?php echo esc_url(get_theme_file_uri('img/logo.png')); ?>" alt="<?php bloginfo('name'); ?>">
             </li>
             <li class="list-inline-item">
               <a href="/">
@@ -38,7 +37,6 @@
               採用情報
               </a>
             </li>
-            <br/>
             <li class="list-inline-item">
               <a href="https://www.trex-group.com/" target="blank">
               コーポレートサイト
@@ -55,12 +53,11 @@
               </a>
             </li>
             <li class="list-inline-item">
-            <img class="site-logo" src="<?php echo esc_url(get_theme_file_uri('img/p-mark.png')); ?>" alt="<?php bloginfo('name'); ?>">
+            <img class="p-mark" src="<?php echo esc_url(get_theme_file_uri('img/p-mark.png')); ?>" alt="<?php bloginfo('name'); ?>">
               </a>
             </li>
           </ul>
           <p class="copyright text-muted">Copyright &copy; 2022 Trex-Group.</p>
-        </div>
       </div>
     </div>
   </footer>

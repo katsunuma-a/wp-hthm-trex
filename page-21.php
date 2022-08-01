@@ -8,10 +8,14 @@
 </head>
 
 <header>
+
 <?php get_template_part('includes/header'); ?>
+
 </header>
 
 <body>
+
+
     <div class="msg-fst-wrapper">
         <h1>ここだけでない<br/>どこでも通用するキャリアを</h1>
     </div>

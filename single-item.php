@@ -3,53 +3,54 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-
-  <?php get_header(); ?>
- 
+    <meta charset="utf-8">
+    <?php get_header(); ?>
+    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
 </head>
+<header>
+
+<?php get_template_part('includes/header'); ?>
+
+</header>
+
 <body <?php body_class(); ?>>
 
   <?php wp_body_open(); ?>
 
-<?php get_template_part('includes/header'); ?>
+
 
 <?php if (have_posts()):?>
 <?php while (have_posts()): the_post(); ?>
 
   <!-- Page Header -->
-  <?php
-  $img = get_eyecatch_with_default();
-  ?>
-  <header class="masthead" style="background-image: url('<?php echo $img[0]; ?>')">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
+  <header class="masthead-rct-post">
+    <div class="container-rct-post">
+      <div class="row-rct-post">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="post-heading">
-            <h1><?php the_title(); ?></h1>
-            <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
-            <span class="meta">Posted by
-              <?php the_author(); ?>
-              on <?php the_date(); ?></span>
+          <div class="site-heading">
+            <span class="subheading">自分に合う仕事って<br/>なんだろう</span>
           </div>
         </div>
       </div>
     </div>
   </header>
+  
+    <div class="container-rct-post">
+      <div class="row-rct-post-ttl">
+            <h1><?php the_title(); ?></h1>
+      </div>
+    </div>
 
   <!-- Post Content -->
   <article>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <?php the_post_thumbnail(array(32,32),array('alt'=>'アイキャッチ画像')); ?>
+    <div class="container-rct-post">
+      <div class="row-rct-post-ctt">
           <?php the_content();?>
-        </div>
       </div>
     </div>
   </article>
 
-  <hr>
+
 
   <?php endwhile; ?>
   <?php endif; ?>
